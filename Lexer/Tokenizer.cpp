@@ -41,6 +41,7 @@ std::string readIdentifier(std::string code)
 	identifier.setTransition(2, 'a', 2);
 	identifier.setTransition(2, '1', 2);
 	identifier.orderTransitions();
+	int size = code.size();
 	if (state = identifier.isAccepting(str))
-
+		std::string str2 = str.substr(3, size-3);
 }
