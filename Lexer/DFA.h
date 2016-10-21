@@ -12,6 +12,7 @@ public:
 	typedef std::pair<char, unsigned> Transition;
 	typedef std::vector<Transition> TransitionSet;
 	typedef std::vector<TransitionSet> TransitionFunction;
+	DFA(){}
 	DFA(unsigned, const std::vector<unsigned> &);
 	virtual ~DFA();
 	virtual void setTransition(unsigned, char, unsigned);
