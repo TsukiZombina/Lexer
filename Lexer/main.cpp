@@ -8,7 +8,7 @@ int main(int argc, char* argv[])
 	std::vector<unsigned> final;
 	final.push_back(1);
 	final.push_back(2);
-	DFA oneChain(3,final,str);
+	DFA oneChain(3,final);
 	oneChain.setTransition(0,'0', 2);
 	oneChain.setTransition(0, '1', 1);
 	oneChain.setTransition(1, '1', 1);

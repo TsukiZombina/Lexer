@@ -111,14 +111,30 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="DFA.h" />
+    <ClInclude Include="DFAAritmetic.h" />
+    <ClInclude Include="DFAAsigRelarional.h" />
+    <ClInclude Include="DFAAssociation.h" />
+    <ClInclude Include="DFABool.h" />
+    <ClInclude Include="DFAIdentifier.h" />
+    <ClInclude Include="DFAInteger.h" />
+    <ClInclude Include="DFALogic.h" />
+    <ClInclude Include="DFAReal.h" />
+    <ClInclude Include="DFAReserved.h" />
     <ClInclude Include="Lexer.h" />
-    <ClInclude Include="Tokenizer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DFA.cpp" />
+    <ClCompile Include="DFAAritmetic.cpp" />
+    <ClCompile Include="DFAAsigRelarional.cpp" />
+    <ClCompile Include="DFAAssociation.cpp" />
+    <ClCompile Include="DFABool.cpp" />
+    <ClCompile Include="DFAIdentifier.cpp" />
+    <ClCompile Include="DFAInteger.cpp" />
+    <ClCompile Include="DFALogic.cpp" />
+    <ClCompile Include="DFAReal.cpp" />
+    <ClCompile Include="DFAReserved.cpp" />
     <ClCompile Include="Lexer.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Tokenizer.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

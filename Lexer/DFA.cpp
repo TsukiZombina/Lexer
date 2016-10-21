@@ -1,8 +1,7 @@
 #include "DFA.h"
 
-DFA::DFA(unsigned totalStates, const std::vector<unsigned>& finalS, std::string str)
+DFA::DFA(unsigned totalStates, const std::vector<unsigned>& finalS)
 {
-	std::string readable = str;
 	TransitionSet transitionSet;
 	for (unsigned i = 0; i < totalStates; i++)
 		transitionFunction.push_back(transitionSet);

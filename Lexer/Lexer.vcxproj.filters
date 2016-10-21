@@ -21,7 +21,31 @@
     <ClInclude Include="Lexer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Tokenizer.h">
+    <ClInclude Include="DFAIdentifier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DFAInteger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DFAReal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DFAAritmetic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DFAAsigRelarional.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DFALogic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DFABool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DFAAssociation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DFAReserved.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -35,7 +59,31 @@
     <ClCompile Include="Lexer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Tokenizer.cpp">
+    <ClCompile Include="DFAIdentifier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DFAInteger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DFAReal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DFAAritmetic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DFAAsigRelarional.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DFALogic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DFABool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DFAAssociation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DFAReserved.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -12,14 +12,13 @@ public:
 	typedef std::pair<char, unsigned> Transition;
 	typedef std::vector<Transition> TransitionSet;
 	typedef std::vector<TransitionSet> TransitionFunction;
-	DFA(unsigned, const std::vector<unsigned> &, std::string);
-	~DFA();
-	void setTransition(unsigned, char, unsigned);
-	void orderTransitions();
-	unsigned isAccepting(const std::string&);
+	DFA(unsigned, const std::vector<unsigned> &);
+	virtual ~DFA();
+	virtual void setTransition(unsigned, char, unsigned);
+	virtual void orderTransitions();
+	virtual unsigned isAccepting(const std::string&);
 
-private:
-	std::string readable;
+protected:
 	TransitionFunction transitionFunction;
 	std::vector<unsigned> finalStates;
 	class Compare
