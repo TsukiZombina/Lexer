@@ -26,9 +26,10 @@ void DFA::orderTransitions()
 		std::sort(transitionSet.begin(), transitionSet.end());
 }
 
-unsigned DFA::isAccepting(const std::string& input) 
+bool DFA::isAccepting(const std::string& input, unsigned actualPosition, unsigned& nextPosition)
 {
 	Compare compare;
+	nextPosition = actualPosition;
 	unsigned state = 0;
 	for (auto& character : input)
 	{
@@ -38,13 +39,13 @@ unsigned DFA::isAccepting(const std::string& input)
 		{
 			std::cout << "Current state: " << state << std::endl;
 			state = it->second;
+			nextPosition++;
 			std::cout << "Next state: " << state << std::endl;
 		}
-				
 		else
-			return state = 0;
+			break;
 	}
-	return *std::lower_bound(finalStates.begin(), finalStates.end(), state);
+	return std::binary_search(finalStates.begin(), finalStates.end(), state);
 }
 
 bool DFA::Compare::operator()(const Transition& lhs, const Transition& rhs)

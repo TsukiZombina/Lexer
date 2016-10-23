@@ -1,12 +1,12 @@
-#include "DFAAritmetics.h"
+#include "DFAAritmetic.h"
 
 
 
-DFAAritmetics::DFAAritmetics()
+DFAAritmetic::DFAAritmetic()
 {
 }
 
 
-DFAAritmetics::~DFAAritmetics()
+DFAAritmetic::~DFAAritmetic()
 {
 }

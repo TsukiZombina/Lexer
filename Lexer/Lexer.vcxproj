@@ -121,6 +121,7 @@
     <ClInclude Include="DFAReal.h" />
     <ClInclude Include="DFAReserved.h" />
     <ClInclude Include="Lexer.h" />
+    <ClInclude Include="SyntacticCategory.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DFA.cpp" />

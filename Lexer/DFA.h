@@ -17,7 +17,7 @@ public:
 	virtual ~DFA();
 	virtual void setTransition(unsigned, char, unsigned);
 	virtual void orderTransitions();
-	virtual unsigned isAccepting(const std::string&);
+	virtual bool isAccepting(const std::string&, unsigned, unsigned&);
 
 protected:
 	TransitionFunction transitionFunction;

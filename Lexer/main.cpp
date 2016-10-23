@@ -3,8 +3,8 @@
 
 int main(int argc, char* argv[])
 {
-	int state;
-	std::string str(argv[1]);
+	std::string str(argv[1]), token;
+	unsigned actualPosition = 0, nextPosition;
 	std::vector<unsigned> final;
 	final.push_back(1);
 	final.push_back(2);
@@ -15,8 +15,12 @@ int main(int argc, char* argv[])
 	oneChain.setTransition(1, '0', 2);
 	oneChain.setTransition(2, '0', 2);
 	oneChain.orderTransitions();
-	if (state = oneChain.isAccepting(str))
-		std::cout << "Success: " << state << std::endl;
+	if (oneChain.isAccepting(str, actualPosition, nextPosition))
+	{
+		token = str.substr(actualPosition, nextPosition - actualPosition);
+		actualPosition = nextPosition;
+		std::cout << token.c_str() << std::endl;
+	}
 	int n;
 	std::cin >> n;
 	return 0;

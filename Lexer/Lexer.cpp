@@ -11,7 +11,7 @@ Lexer::~Lexer()
 {
 }
 
-std::string Tokenizer::readWS(std::string code, const char* filename) {
+std::string Lexer::readWS(std::string code, const char* filename) {
 	std::ifstream ifs(filename);
 	char character;
 	if (ifs.is_open())
