@@ -1,27 +1,15 @@
 #include <iostream>
-#include "DFA.h"
+#include "DFATrue.h"
 
 int main(int argc, char* argv[])
 {
-	std::string str(argv[1]), token;
+	std::string str(argv[1]), lexem;
+	DFATrue dfa;
 	unsigned actualPosition = 0, nextPosition;
-	std::vector<unsigned> final;
-	final.push_back(1);
-	final.push_back(2);
-	DFA oneChain(3,final);
-	oneChain.setTransition(0,'0', 2);
-	oneChain.setTransition(0, '1', 1);
-	oneChain.setTransition(1, '1', 1);
-	oneChain.setTransition(1, '0', 2);
-	oneChain.setTransition(2, '0', 2);
-	oneChain.orderTransitions();
-	if (oneChain.isAccepting(str, actualPosition, nextPosition))
+	if (dfa.isAccepting(str, actualPosition, nextPosition))
 	{
-		token = str.substr(actualPosition, nextPosition - actualPosition);
-		actualPosition = nextPosition;
-		std::cout << token.c_str() << std::endl;
+		lexem = str.substr(actualPosition, nextPosition - actualPosition);
+	 	std::cout << lexem.c_str() << std::endl;
 	}
-	int n;
-	std::cin >> n;
 	return 0;
 }
