@@ -45,7 +45,7 @@ bool DFA::isAccepting(const std::string& input,
 	for (auto& character : input)
 	{
 		//States a transition with q0 since this method search for the next state
-		//by means of symbols
+		//by means of symbols 
 		Transition transition(state, character);
 		//Finds if there is a symbol O(n)
 		auto it = std::search_n(graph[state].begin(), 
