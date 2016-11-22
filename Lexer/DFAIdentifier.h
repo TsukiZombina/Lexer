@@ -6,5 +6,7 @@ class DFAIdentifier :
 public:
 	DFAIdentifier();
 	virtual ~DFAIdentifier();
+private:
+	const unsigned FCardinality = 7;
 };
 

@@ -9,19 +9,19 @@
 class DFA
 {
 public:
-	typedef std::pair<char, unsigned> Transition;
+	typedef std::pair<unsigned, char> Transition;
 	typedef std::vector<Transition> TransitionSet;
-	typedef std::vector<TransitionSet> TransitionFunction;
-	DFA(){}
-	DFA(unsigned, const std::vector<unsigned> &);
+	typedef std::vector<TransitionSet> Graph;
+	DFA();
+	DFA(unsigned, const std::vector<unsigned>&);
 	virtual ~DFA();
-	virtual void setTransition(unsigned, char, unsigned);
-	virtual void orderTransitions();
+	virtual void setTransition(unsigned, unsigned, char);
+	virtual void sortTransitions();
 	virtual bool isAccepting(const std::string&, unsigned, unsigned&);
-
+	virtual void printGraph();
 protected:
-	TransitionFunction transitionFunction;
-	std::vector<unsigned> finalStates;
+	Graph graph;
+	std::vector<unsigned>* F;
 	class Compare
 	{
 	public:
