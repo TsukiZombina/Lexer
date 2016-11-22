@@ -1,5 +1,5 @@
 #include <iostream>
-#include "DFA.h"
+#include "DFA.h" 
 
 int main(int argc, char* argv[])
 {
