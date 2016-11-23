@@ -75,6 +75,9 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -111,29 +114,33 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="DFA.h" />
-    <ClInclude Include="DFAAritmetic.h" />
-    <ClInclude Include="DFAAsigRelarional.h" />
+    <ClInclude Include="DFAArithmetic.h" />
     <ClInclude Include="DFAAssociation.h" />
-    <ClInclude Include="DFABool.h" />
+    <ClInclude Include="DFAFalse.h" />
     <ClInclude Include="DFAIdentifier.h" />
+    <ClInclude Include="DFAIf.h" />
     <ClInclude Include="DFAInteger.h" />
     <ClInclude Include="DFALogic.h" />
     <ClInclude Include="DFAReal.h" />
-    <ClInclude Include="DFAReserved.h" />
+    <ClInclude Include="DFARelational.h" />
+    <ClInclude Include="DFATrue.h" />
+    <ClInclude Include="DFAWhile.h" />
     <ClInclude Include="Lexer.h" />
-    <ClInclude Include="SyntacticCategory.h" />
+    <ClInclude Include="TokenIdentifier.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DFA.cpp" />
-    <ClCompile Include="DFAAritmetic.cpp" />
-    <ClCompile Include="DFAAsigRelarional.cpp" />
+    <ClCompile Include="DFAArithmetic.cpp" />
     <ClCompile Include="DFAAssociation.cpp" />
-    <ClCompile Include="DFABool.cpp" />
+    <ClCompile Include="DFAFalse.cpp" />
     <ClCompile Include="DFAIdentifier.cpp" />
+    <ClCompile Include="DFAIf.cpp" />
     <ClCompile Include="DFAInteger.cpp" />
     <ClCompile Include="DFALogic.cpp" />
     <ClCompile Include="DFAReal.cpp" />
-    <ClCompile Include="DFAReserved.cpp" />
+    <ClCompile Include="DFARelational.cpp" />
+    <ClCompile Include="DFATrue.cpp" />
+    <ClCompile Include="DFAWhile.cpp" />
     <ClCompile Include="Lexer.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>

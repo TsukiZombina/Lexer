@@ -15,6 +15,8 @@ DFATrue::DFATrue()
 	setTransition(2, 3, 'u');
 	setTransition(3, 4, 'e');
 	//Step4: sort transitions by symbol
+
+	
 	sortTransitions();
 }
 

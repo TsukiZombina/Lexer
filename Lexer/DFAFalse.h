@@ -8,6 +8,6 @@ public:
 	DFAFalse();
 	virtual ~DFAFalse();
 private:
-	const unsigned cardinality = 5;
-	const char* lexema = "False";
+	const unsigned FCardinality = 1; //|F|
+	const unsigned cardinality = 6;  //|Q|
 };

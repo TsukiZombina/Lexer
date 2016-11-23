@@ -1,10 +1,10 @@
 #include <iostream>
-#include "DFATrue.h"
+#include "DFAFalse.h"
 
 int main(int argc, char* argv[])
 {
 	std::string str(argv[1]), lexem;
-	DFATrue dfa;
+	DFAFalse dfa;
 	unsigned actualPosition = 0, nextPosition;
 	if (dfa.isAccepting(str, actualPosition, nextPosition))
 	{

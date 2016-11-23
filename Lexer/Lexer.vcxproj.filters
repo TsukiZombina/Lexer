@@ -30,33 +30,36 @@
     <ClInclude Include="DFAReal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DFAAritmetic.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DFAAsigRelarional.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="DFALogic.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DFABool.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="DFAAssociation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DFAReserved.h">
+    <ClInclude Include="DFAArithmetic.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SyntacticCategory.h">
+    <ClInclude Include="DFAFalse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DFAIf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DFARelational.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DFATrue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DFAWhile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TokenIdentifier.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DFA.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Lexer.cpp">
@@ -71,22 +74,31 @@
     <ClCompile Include="DFAReal.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DFAAritmetic.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DFAAsigRelarional.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="DFALogic.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DFABool.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="DFAAssociation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DFAReserved.cpp">
+    <ClCompile Include="DFAArithmetic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DFAFalse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DFAIf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DFARelational.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DFATrue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DFAWhile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
